@@ -5,7 +5,9 @@ from allure_commons.types import AttachmentType
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
+@pytest.mark.negativescenario
+@allure.title("Verify Validations for Username field")
+@allure.description("Verify error message for Username field when it is empty and click on Submit button")
 def test_Error():
     driver = webdriver.Chrome()
     driver.get("https://cdpn.io/AbdullahSajjad/fullpage/LYGVRgK?anon=true&view=fullpage")
