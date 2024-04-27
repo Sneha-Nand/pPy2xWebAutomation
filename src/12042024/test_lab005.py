@@ -3,7 +3,7 @@ import time
 import pytest
 import logging
 
-@pytest.mark.smoke
+
 def test_open_website():
    # LOGGER = logging.getLogger(name)
     driver = webdriver.Chrome()
@@ -28,7 +28,7 @@ def test_open_website():
     # open chrome brower is automaticaly closed if there is no command
    
    
-   # pytest -s src\12022024\test_lab005.py --alluredir=allure-results - run from command promt
+   # pytest -s src\12042024\test_lab005.py --alluredir=allure-results - run from command promt
    
    # -s is basically used to print the messages
    
